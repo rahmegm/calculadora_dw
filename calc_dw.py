@@ -1,17 +1,17 @@
 def soma(*args):
-        resultado = 0
+    resultado = 0
     for num in args:
         resultado += num
     return print(f"O resultado da soma dos valores digitado é: {resultado} ")
 
 
 def sub(*args):
-	for cont in range(len(args)):
+    for cont in range(len(args)):
         if cont == 0:
             resultado = args[cont]
         else:
             resultado -= args[cont]
-	return print(f"O resultado da subtração dos valores digitados é: {resultado} ")
+    return print(f"O resultado da subtração dos valores digitados é: {resultado} ")
 
 
 def mult(*args):
