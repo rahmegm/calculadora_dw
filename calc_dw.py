@@ -6,13 +6,19 @@ def soma(*args):
 
 
 def sub(*args):
+	for cont in range(len(args)):
+        if cont == 0:
+            resultado = args[cont]
+        else:
+            resultado -= args[cont]
+	return print(f"O resultado da subtração dos valores digitados é: {resultado} ")
 
 
 def mult(*args):
     resultado = 1
     for num in args:
         resultado *= num
-    return print(f"O resultado da multiplicacao dos valores digitados é: {resultado} ")
+    return print(f"O resultado da multiplicação dos valores digitados é: {resultado} ")
 
 
 def div(*args):
@@ -24,7 +30,7 @@ def div(*args):
         else:
             resultado = "Não é possível dividir por 0!"
             break
-    return print(resultado)      
+    return print(f"O resultado da divisão dos valores digitados é: {resultado} ")      
 
 
 def calc():
