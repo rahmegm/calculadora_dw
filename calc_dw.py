@@ -9,6 +9,10 @@ def sub(*args):
 
 
 def mult(*args):
+    resultado = 1
+    for num in args:
+        resultado *= num
+    return print(f"O resultado da multiplicacao dos valores digitados é: {resultado} ")
 
 
 def div(*args):
